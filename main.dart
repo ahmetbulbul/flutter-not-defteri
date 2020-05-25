@@ -168,7 +168,7 @@ class notlar extends StatelessWidget {
               child: InkWell(
                 onTap: () => print("ciao"),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,  // add this
+                  crossAxisAlignment: CrossAxisAlignment.stretch, 
                   children: <Widget>[
                     ClipRRect(
                       borderRadius: BorderRadius.only(
@@ -365,9 +365,6 @@ class _MyAppState extends State<MyApp> {
               title: Text('Favorilerim',style: TextStyle(fontSize: 13),),
 
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => favoriler()),
@@ -379,9 +376,6 @@ class _MyAppState extends State<MyApp> {
               title: Text('Yakın Zamanda Silinenler',style: TextStyle(fontSize: 13),),
 
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => favoriler()),
